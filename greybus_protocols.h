@@ -52,6 +52,9 @@
 #ifndef __GREYBUS_PROTOCOLS_H
 #define __GREYBUS_PROTOCOLS_H
 
+#include <linux/types.h>
+#define __packed __attribute__((__packed__))
+
 /* Fixed IDs for control/svc protocols */
 
 /* SVC switch-port device ids */

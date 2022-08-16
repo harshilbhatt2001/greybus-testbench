@@ -7,7 +7,6 @@
 #include <poll.h>
 
 #include <debug.h>
-#include <controller.h>
 #include <greybus_protocols.h>
 #include <greybus-testbench.h>
 #include "uart_controller.h"
@@ -95,9 +94,7 @@ int register_uart_controller(const char *file_name, int baudrate) {
 }
 
 void uart_init_gb(void) {
-    int ret;
 
-    return;
 }
 
 int uart_controller_init(const char *file_name, int baudrate) {
