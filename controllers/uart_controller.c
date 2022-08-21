@@ -145,7 +145,7 @@ static int _uart_read(struct uart_controller *ctrl, void *data, size_t len) {
             if (EAGAIN == errno) {
                 continue;
             }
-            pr_error("%s(): read failed: %d\n", __func__, ret);
+            pr_error("%s(): read failed: %d, errno: \n", __func__, ret, errno);
             return ret;
         }
         recvd = ret;
